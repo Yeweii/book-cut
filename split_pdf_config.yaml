@@ -1,0 +1,17 @@
+# PDF 切分配置文件示例
+# 使用方式：python split_pdf.py --config split_pdf_config.yaml
+
+input_pdf: "./output/景刊宋金元明本词.仁和吴氏双照楼影刊宋元本词.武进陶氏续刊景宋金元明本词.清宣统三年至民国十二年刊本.中国国家图书馆藏.黑白版_cut.pdf"
+output_dir: "./output"
+
+# 切分配置
+splits:
+  - range: [1, 2311]
+    name: "V1景刊宋金元明本词.仁和吴氏双照楼影刊宋元本词.武进陶氏续刊景宋金元明本词.清宣统三年至民国十二年刊"
+  - range: [2311, 4574]
+    name: "V2景刊宋金元明本词.仁和吴氏双照楼影刊宋元本词.武进陶氏续刊景宋金元明本词.清宣统三年至民国十二年刊"
+#  - range: [21, 30]
+#    name: "卷三"
+
+# 是否保留书签
+preserve_bookmarks: true
